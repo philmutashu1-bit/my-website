@@ -1,93 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+  <title>O Level Student Website | Contact Me</title>
+
+  <meta name="description" content="A simple student website where users can send messages directly via contact form. Built for O Level project.">
+
+  <style>
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #4facfe, #00f2fe);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+      font-family: Arial;
+      margin: 0;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      text-align: center;
+      color: #333;
     }
 
     .container {
-        background: white;
-        padding: 30px;
-        border-radius: 15px;
-        width: 350px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        text-align: center;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-        color: #333;
+      background: white;
+      max-width: 500px;
+      margin: 80px auto;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 
     input, textarea {
-        width: 100%;
-        padding: 12px;
-        margin: 10px 0;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        font-size: 14px;
-    }
-
-    textarea {
-        resize: none;
-        height: 100px;
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
     }
 
     button {
-        width: 100%;
-        padding: 12px;
-        background: #4facfe;
-        border: none;
-        color: white;
-        font-size: 16px;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: 0.3s;
+      padding: 10px 20px;
+      background: #4facfe;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 8px;
     }
-
-    button:hover {
-        background: #00c6ff;
-    }
-
-    .footer {
-        margin-top: 10px;
-        font-size: 12px;
-        color: #888;
-    }
-</style>
-
+  </style>
 </head>
+
 <body>
 
 <div class="container">
-    <h2>Contact Me</h2>
 
-    <form action="https://api.web3forms.com/submit" method="POST">
+  <h1>My Student Website</h1>
 
-        <!-- YOUR KEY HERE -->
-        <input type="hidden" name="access_key" value="a2d155e8-b9ef-43cb-abfc-7348590f3dc4">
+  <p>This website is made for my O Level project. You can send me a message below.</p>
 
-        <input type="email" name="email" placeholder="Your Email" required>
+  <form action="https://api.web3forms.com/submit" method="POST">
 
-        <textarea name="message" placeholder="Your Message" required></textarea>
+    <input type="hidden" name="access_key" value="PASTE_YOUR_ACCESS_KEY_HERE">
 
-        <button type="submit">Send Message</button>
-    </form>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <br>
 
-    <div class="footer">
-        I’ll reply to your email soon 📩
-    </div>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <br>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+
 </div>
 
 </body>
