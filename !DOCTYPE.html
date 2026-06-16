@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        width: 350px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: #4facfe;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #00c6ff;
+    }
+
+    .footer {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #888;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Me</h2>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- YOUR KEY HERE -->
+        <input type="hidden" name="access_key" value="a2d155e8-b9ef-43cb-abfc-7348590f3dc4">
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="footer">
+        I’ll reply to your email soon 📩
+    </div>
+</div>
+
+</body>
+</html>
