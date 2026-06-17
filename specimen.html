@@ -1,25 +1,68 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Specimen Papers</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: linear-gradient(135deg, #43e97b, #38f9d7);
+      text-align: center;
+      color: white;
+    }
+
+    .box {
+      margin-top: 80px;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      padding: 15px;
+      margin: 15px auto;
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 20px;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>📄 Specimen Papers</h1>
+  <div class="box">
 
-  <h2>Mathematics</h2>
-  <a href="math.pdf" download>Download Math Paper</a>
+    <h1>📄 Specimen Papers</h1>
 
-  <h2>Science</h2>
-  <a href="science.pdf" download>Download Science Paper</a>
+    <div class="card">
+      <h3>Mathematics</h3>
+      <a href="math.pdf" download>Download</a>
+    </div>
 
-  <h2>English</h2>
-  <a href="english.pdf" download>Download English Paper</a>
+    <div class="card">
+      <h3>Science</h3>
+      <a href="science.pdf" download>Download</a>
+    </div>
 
-  <br><br>
+    <div class="card">
+      <h3>English</h3>
+      <a href="english.pdf" download>Download</a>
+    </div>
 
-  <a href="index.html">⬅ Back Home</a>
+    <a class="back" href="index.html">⬅ Back Home</a>
+
+  </div>
 
 </body>
 </html>
