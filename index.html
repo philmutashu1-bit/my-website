@@ -1,135 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O Level Study Hub</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(-45deg, #4facfe, #00f2fe, #43e97b, #38f9d7);
-      background-size: 400% 400%;
-      animation: bg 10s ease infinite;
-      color: white;
-      text-align: center;
-    }
-
-    @keyframes bg {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
-    .hero {
-      padding-top: 70px;
-    }
-
-    h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 12px rgba(0,0,0,0.3);
-    }
-
-    .subtitle {
-      font-size: 18px;
-      opacity: 0.9;
-      margin-bottom: 40px;
-    }
-
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(10px);
-      width: 250px;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.07);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: white;
-      color: black;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    a:hover {
-      background: black;
-      color: white;
-    }
-
-    .footer {
-      margin-top: 60px;
-      padding: 15px;
-      font-size: 14px;
-      opacity: 0.8;
-    }
-
-    .emoji {
-      font-size: 55px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- HERO SECTION -->
-  <div class="hero">
-    <div class="emoji">📚</div>
-    <h1>O Level Study Hub</h1>
-    <div class="subtitle">
-      Welcome 👋 Your notes, past papers, and resources all in one place.
-    </div>
+<header>
+  <h1>📚 O Level Study Hub</h1>
+  <p>Past Papers • Specimen Papers • Revision Tools</p>
+</header>
+
+<div class="search-box">
+  <input type="text" id="search" placeholder="Search papers or subjects..." onkeyup="searchSite()">
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>📄 Specimen Papers</h2>
+    <p>Latest exam specimen papers</p>
+    <a href="specimen.html">Open</a>
   </div>
 
-  <!-- CARDS -->
-  <div class="card-container">
-
-    <div class="card">
-      <h3>📄 Specimen Papers</h3>
-      <p>Download Maths, Science & English papers</p>
-      <a href="specimen.html">Open</a>
-    </div>
-
-    <div class="card">
-      <h3>📞 Contact</h3>
-      <p>Send me a message directly</p>
-      <a href="contact.html">Open</a>
-    </div>
-
-    <div class="card">
-      <h3>🎯 Study Hub</h3>
-      <p>Everything you need for O Level success</p>
-      <a href="specimen.html">Explore</a>
-    </div>
-
+  <div class="card">
+    <h2>📘 Past Papers</h2>
+    <p>Download past exam papers</p>
+    <a href="pastpapers.html">Open</a>
   </div>
 
-  <!-- FOOTER -->
-  <div class="footer">
-    🚀 Published by Phil Mutashu | O Level Study Hub © 2026
+  <div class="card">
+    <h2>🎯 Study Tools</h2>
+    <p>Revision notes & help</p>
+    <a href="tools.html">Explore</a>
   </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
