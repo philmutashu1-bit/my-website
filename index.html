@@ -1,41 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>EduVault | Zimbabwe's Smart Learning Platform</title>
 
-<title>
-EduVault| Zimbabwe's Digital Learning Platform
-</title>
-
-
-<meta name="description" content="
-Access ZIMSEC notes, specimen papers, past papers and revision resources. Learn smarter and pass faster.
-">
-
-
-<link rel="stylesheet" href="style.css">
-
+<meta name="description" content="Access ZIMSEC notes, past papers, specimen papers and revision resources.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+background:#f8fafc;
+color:#111827;
+
+}
+
+
+/* NAVBAR */
+
+
+header{
+
+position:sticky;
+top:0;
+z-index:1000;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(15px);
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+.logo{
+
+font-size:25px;
+font-weight:800;
+color:#2563eb;
+
+}
+
+
+.logo i{
+
+margin-right:10px;
+
+}
+
+
+
+nav a{
+
+text-decoration:none;
+margin:0 15px;
+color:#374151;
+font-weight:500;
+
+}
+
+
+
+nav a:hover{
+
+color:#2563eb;
+
+}
+
+
+
+.login{
+
+background:#2563eb;
+color:white;
+
+border:none;
+padding:12px 25px;
+
+border-radius:30px;
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+min-height:90vh;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+padding:70px 8%;
+
+background:
+
+linear-gradient(135deg,#eff6ff,#ffffff);
+
+}
+
+
+
+.badge{
+
+display:inline-block;
+
+padding:10px 20px;
+
+background:#dbeafe;
+
+border-radius:50px;
+
+color:#2563eb;
+
+font-weight:600;
+
+margin-bottom:25px;
+
+}
+
+
+h1{
+
+font-size:60px;
+line-height:1.1;
+
+}
+
+
+h1 span{
+
+color:#2563eb;
+
+}
+
+
+
+.hero p{
+
+font-size:18px;
+
+color:#64748b;
+
+margin:25px 0;
+
+max-width:550px;
+
+}
+
+
+
+.buttons a{
+
+display:inline-block;
+
+padding:15px 30px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+margin-right:15px;
+
+font-weight:600;
+
+}
+
+
+
+.primary{
+
+background:#2563eb;
+color:white;
+
+}
+
+
+.secondary{
+
+border:2px solid #2563eb;
+color:#2563eb;
+
+}
+
+
+
+/* HERO CARD */
+
+
+.hero-card{
+
+display:flex;
+
+justify-content:center;
+
+}
+
+
+
+.card{
+
+width:350px;
+
+height:420px;
+
+border-radius:30px;
+
+background:
+
+linear-gradient(145deg,#2563eb,#38bdf8);
+
+color:white;
+
+padding:40px;
+
+box-shadow:0 30px 60px rgba(37,99,235,.3);
+
+animation:float 4s infinite;
+
+}
+
+
+.card i{
+
+font-size:70px;
+
+}
+
+
+.card h2{
+
+font-size:55px;
+
+margin-top:30px;
+
+}
+
+
+
+@keyframes float{
+
+50%{
+transform:translateY(-20px);
+}
+
+}
+
+
+
+/* STATS */
+
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+padding:60px 8%;
+
+background:white;
+
+text-align:center;
+
+}
+
+
+
+.stats h2{
+
+font-size:40px;
+
+color:#2563eb;
+
+}
+
+
+
+.stats p{
+
+color:#64748b;
+
+}
+
+
+
+/* FEATURES */
+
+
+section{
+
+padding:80px 8%;
+
+}
+
+
+.title{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:50px;
+
+}
+
+
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+.box{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.box:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.box i{
+
+font-size:40px;
+
+color:#2563eb;
+
+margin-bottom:20px;
+
+}
+
+
+
+/* SUBJECTS */
+
+
+.subjects{
+
+background:#eff6ff;
+
+}
+
+
+.subject-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+}
+
+
+
+.subject{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+font-size:20px;
+
+font-weight:600;
+
+}
+
+
+.subject i{
+
+display:block;
+
+font-size:35px;
+
+color:#2563eb;
+
+margin-bottom:15px;
+
+}
+
+
+
+/* CTA */
+
+
+.cta{
+
+text-align:center;
+
+background:#2563eb;
+
+color:white;
+
+}
+
+
+.cta h2{
+
+font-size:45px;
+
+}
+
+
+.cta a{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:15px 40px;
+
+background:white;
+
+color:#2563eb;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:700;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#111827;
+
+color:white;
+
+padding:50px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+
+footer a{
+
+color:#cbd5e1;
+
+text-decoration:none;
+
+display:block;
+
+margin:10px;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+.hero{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+
+h1{
+
+font-size:42px;
+
+}
+
+
+.stats{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+
+.features,
+.subject-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+nav{
+
+display:none;
+
+}
+
+
+footer{
+
+display:block;
+
+}
+
+}
+
+
+</style>
 
 
 </head>
 
 
-
 <body>
 
-
-<!-- NAVBAR -->
 
 <header>
 
@@ -44,28 +580,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <i class="fa-solid fa-graduation-cap"></i>
 
-<span>
-O Level Study Hub
-</span>
+EduVault
 
 </div>
 
 
-
 <nav>
 
-<a href="index.html">Home</a>
-
-<a href="notes.html">Notes</a>
-
-<a href="specimen.html">Specimen</a>
-
-<a href="pastpapers.html">Past Papers</a>
-
-<a href="subjects.html">Subjects</a>
-
-<a href="contact.html">Contact</a>
-
+<a href="#">Home</a>
+<a href="#">Notes</a>
+<a href="#">Past Papers</a>
+<a href="#">Subjects</a>
+<a href="#">Contact</a>
 
 </nav>
 
@@ -82,111 +608,54 @@ Student Portal
 
 
 
-
-<!-- HERO SECTION -->
-
-
 <section class="hero">
 
 
-<div class="hero-content">
+<div>
 
 
 <div class="badge">
 
-🔥 Zimbabwe's Smart Learning Platform
+🔥 Zimbabwe's #1 O-Level Learning Platform
 
 </div>
-
 
 
 <h1>
 
-Master Your O-Level Exams
+Master Exams.
+<br>
 
-<span>
-With Confidence
-</span>
+<span>Achieve More.</span>
 
 </h1>
 
 
-
 <p>
 
-A complete digital library for ZIMSEC students.
-Access notes, specimen papers, past exams and revision guides anytime.
+Access thousands of ZIMSEC notes, past papers,
+specimen papers and revision materials anywhere,
+anytime.
 
 </p>
 
 
+<div class="buttons">
 
-<div class="hero-buttons">
-
-
-<a href="subjects.html" class="primary">
-
+<a class="primary" href="#">
 Start Learning 🚀
-
 </a>
 
 
-<a href="pastpapers.html" class="secondary">
-
+<a class="secondary" href="#">
 Explore Papers
-
 </a>
 
 
 </div>
 
 
-
-<div class="trust">
-
-
-<div>
-
-<i class="fa-solid fa-users"></i>
-
-<p>
-Students
-</p>
-
 </div>
-
-
-
-<div>
-
-<i class="fa-solid fa-file-pdf"></i>
-
-<p>
-Resources
-</p>
-
-</div>
-
-
-
-<div>
-
-<i class="fa-solid fa-clock"></i>
-
-<p>
-24/7 Access
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
 
 
 
@@ -194,45 +663,20 @@ Resources
 <div class="hero-card">
 
 
-<div class="floating-card">
+<div class="card">
 
-
-<i class="fa-solid fa-book"></i>
-
-<h3>
-
-500+
-
-</h3>
-
-<p>
-
-Study Resources
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="main-book">
-
-
-<i class="fa-solid fa-graduation-cap"></i>
-
+<i class="fa-solid fa-book-open"></i>
 
 <h2>
 
-Learn Anywhere
+5000+
 
 </h2>
 
 
 <p>
 
-Your digital classroom
+Learning Resources
 
 </p>
 
@@ -249,65 +693,41 @@ Your digital classroom
 
 
 
-
-
-<!-- STATS -->
-
-
-<section class="numbers">
+<section class="stats">
 
 
 <div>
 
-<h2>
-1000+
-</h2>
+<h2>5000+</h2>
 
-<p>
-Revision Notes
-</p>
+<p>Notes</p>
 
 </div>
 
 
-
 <div>
 
-<h2>
-500+
-</h2>
+<h2>2000+</h2>
 
-<p>
-Exam Papers
-</p>
+<p>Past Papers</p>
 
 </div>
 
 
-
 <div>
 
-<h2>
-10+
-</h2>
+<h2>20+</h2>
 
-<p>
-Subjects
-</p>
+<p>Subjects</p>
 
 </div>
 
 
-
 <div>
 
-<h2>
-2026
-</h2>
+<h2>24/7</h2>
 
-<p>
-Updated Content
-</p>
+<p>Access</p>
 
 </div>
 
@@ -318,185 +738,135 @@ Updated Content
 
 
 
+<section>
 
 
+<h2 class="title">
 
-
-<!-- WHY US -->
-
-
-<section class="why">
-
-
-<h2>
-
-Why Students Choose Us
+Why Choose EduVault?
 
 </h2>
-
 
 
 <div class="features">
 
 
+<div class="box">
 
-<div class="feature">
+<i class="fa-solid fa-file-pdf"></i>
 
-
-<i class="fa-solid fa-book-open"></i>
-
-<h3>
-Quality Notes
-</h3>
-
+<h3>Quality Resources</h3>
 
 <p>
-Simple explanations designed for O-Level success.
+Well organised notes designed for exam success.
 </p>
-
 
 </div>
 
 
 
+<div class="box">
 
+<i class="fa-solid fa-clock"></i>
 
-<div class="feature">
-
-
-<i class="fa-solid fa-file-circle-check"></i>
-
-<h3>
-Exam Practice
-</h3>
-
+<h3>Study Anytime</h3>
 
 <p>
-Prepare using specimen papers and past exams.
+Access materials from your phone or computer.
 </p>
-
 
 </div>
 
 
 
 
+<div class="box">
 
-<div class="feature">
+<i class="fa-solid fa-graduation-cap"></i>
 
-
-<i class="fa-solid fa-mobile-screen"></i>
-
-<h3>
-Learn Anywhere
-</h3>
-
+<h3>Exam Ready</h3>
 
 <p>
-Study using your phone, tablet or computer.
+Practice with real examination papers.
 </p>
 
-
 </div>
 
 
-
-
 </div>
-
 
 </section>
 
 
 
 
-
-
-
-
-
-<!-- SUBJECTS -->
 
 
 <section class="subjects">
 
 
-<h2>
+<h2 class="title">
 
-Explore Subjects
+Popular Subjects
 
 </h2>
-
 
 
 <div class="subject-grid">
 
 
-
-<a href="subjects.html">
+<div class="subject">
 
 <i class="fa-solid fa-calculator"></i>
 
 Mathematics
 
-</a>
+</div>
 
 
-
-<a href="subjects.html">
+<div class="subject">
 
 <i class="fa-solid fa-flask"></i>
 
-Combined Science
+Science
 
-</a>
-
-
+</div>
 
 
-<a href="subjects.html">
-
-<i class="fa-solid fa-code"></i>
-
-Computer Science
-
-</a>
-
-
-
-
-
-<a href="subjects.html">
+<div class="subject">
 
 <i class="fa-solid fa-earth-africa"></i>
 
 Geography
 
-</a>
+</div>
 
 
+<div class="subject">
+
+<i class="fa-solid fa-code"></i>
+
+Computer Science
+
+</div>
 
 
-<a href="subjects.html">
+<div class="subject">
 
 <i class="fa-solid fa-language"></i>
 
 English
 
-</a>
+</div>
 
 
-
-
-
-<a href="subjects.html">
+<div class="subject">
 
 <i class="fa-solid fa-landmark"></i>
 
-Heritage
+Heritage Studies
 
-</a>
-
+</div>
 
 
 </div>
@@ -506,13 +876,6 @@ Heritage
 
 
 
-
-
-
-
-
-
-<!-- CALL TO ACTION -->
 
 
 <section class="cta">
@@ -527,14 +890,14 @@ Ready To Improve Your Results?
 
 <p>
 
-Join thousands of students preparing smarter.
+Join thousands of Zimbabwean students learning smarter.
 
 </p>
 
 
-<a href="notes.html">
+<a href="#">
 
-Browse Resources
+Create Free Account
 
 </a>
 
@@ -545,66 +908,38 @@ Browse Resources
 
 
 
-
-
-
-
 <footer>
 
 
 <div>
 
-
 <h2>
 
-O Level Study Hub
+EduVault
 
 </h2>
 
-
 <p>
 
-Empowering Zimbabwean students through digital learning.
+Empowering Zimbabwe through digital education.
 
 </p>
-
 
 </div>
 
 
+<div>
 
-<div class="footer-links">
+<a href="#">Home</a>
 
+<a href="#">Resources</a>
 
-<a href="index.html">
-Home
-</a>
-
-
-<a href="contact.html">
-Contact
-</a>
-
-
-<a href="notes.html">
-Resources
-</a>
-
+<a href="#">Contact</a>
 
 </div>
-
-
-
-<p>
-
-© 2026 O Level Study Hub. All Rights Reserved.
-
-</p>
 
 
 </footer>
-
-
 
 
 
