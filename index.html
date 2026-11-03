@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,613 +8,877 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EduVault | Zimbabwe's Digital Learning Platform</title>
+    <meta name="theme-color" content="#080d1b">
 
-    <meta name="description" content="
-    Access ZIMSEC notes, specimen papers, past papers and revision resources.
-    Learn smarter and pass faster.
-    ">
+    <meta name="description" content="EDUVAULT AI is your intelligent learning platform. Explore AI tutoring, smart quizzes, study notes and personalized learning tools.">
 
+    <title>EDUVAULT AI | Learn Beyond Limits</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-
 </head>
-
 
 <body>
 
 
-<!-- ================= NAVBAR ================= -->
+<!-- =====================================
+     NAVIGATION
+===================================== -->
 
-<header>
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            <i class="fa-solid fa-brain"></i>
+        </div>
+
+        <span>EDUVAULT<span class="logo-ai"> AI</span></span>
+
+    </a>
 
 
-    <div class="logo">
+    <nav class="nav-links" id="navLinks">
 
-        <i class="fa-solid fa-graduation-cap"></i>
+        <a href="index.html" class="active">Home</a>
 
-        <span>
-            O Level Study Hub
-        </span>
+        <a href="#features">Features</a>
 
-    </div>
+        <a href="#tools">AI Tools</a>
 
+        <a href="#subjects">Subjects</a>
 
-
-    <nav>
-
-        <a href="index.html">Home</a>
-
-        <a href="notes.html">Notes</a>
-
-        <a href="specimen.html">Specimen</a>
-
-        <a href="pastpapers.html">Past Papers</a>
-
-        <a href="subjects.html">Subjects</a>
-
-        <a href="contact.html">Contact</a>
+        <a href="#about">About</a>
 
     </nav>
 
 
+    <div class="nav-actions">
 
-    <button class="login">
+        <a href="chat.html" class="nav-login">
+            Sign In
+        </a>
 
-        Student Portal
+        <a href="chat.html" class="nav-button">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false">
+
+        <i class="fa-solid fa-bars"></i>
 
     </button>
-
 
 </header>
 
 
 
+<main>
 
 
-<!-- ================= HERO SECTION ================= -->
-
+<!-- =====================================
+     HERO SECTION
+===================================== -->
 
 <section class="hero">
 
-
-<div class="hero-content">
-
-
-    <div class="badge">
-
-        🔥 Zimbabwe's Smart Learning Platform
-
-    </div>
+    <div class="hero-background"></div>
 
 
+    <div class="hero-content">
 
-    <h1>
+        <div class="hero-badge">
 
-        Master Your O-Level Exams
+            <span class="status-dot"></span>
 
-        <span>
-            With Confidence
-        </span>
-
-    </h1>
-
-
-
-
-    <p>
-
-        A complete digital library for ZIMSEC students.
-        Access notes, specimen papers, past exams and revision guides anytime.
-
-    </p>
-
-
-
-
-
-    <div class="hero-buttons">
-
-
-        <a href="subjects.html" class="primary">
-
-            Start Learning 🚀
-
-        </a>
-
-
-
-        <a href="pastpapers.html" class="secondary">
-
-            Explore Papers
-
-        </a>
-
-
-    </div>
-
-
-
-
-
-    <div class="trust">
-
-
-
-        <div>
-
-            <i class="fa-solid fa-users"></i>
-
-            <p>
-                Students
-            </p>
+            THE FUTURE OF INTELLIGENT LEARNING
 
         </div>
 
 
+        <h1>
 
-        <div>
+            Think Smarter.
 
-            <i class="fa-solid fa-file-pdf"></i>
+            <span>Learn Faster.</span>
 
-            <p>
-                Resources
-            </p>
+            Achieve More.
 
-        </div>
-
-
-
-        <div>
-
-            <i class="fa-solid fa-clock"></i>
-
-            <p>
-                24/7 Access
-            </p>
-
-        </div>
-
-
-    </div>
-
-
-</div>
-
-
-
-
-
-<!-- HERO CARD -->
-
-
-<div class="hero-card">
-
-
-    <div class="floating-card">
-
-
-        <i class="fa-solid fa-book"></i>
-
-
-        <h3>
-            500+
-        </h3>
+        </h1>
 
 
         <p>
-            Study Resources
+
+            Meet your personal AI learning companion.
+
+            Explore knowledge, understand difficult concepts,
+            generate study materials and unlock your full
+            learning potential.
+
         </p>
 
+
+        <div class="hero-buttons">
+
+            <a href="chat.html" class="hero-primary">
+
+                Start Learning
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="#features" class="hero-secondary">
+
+                <i class="fa-solid fa-circle-play"></i>
+
+                Explore Platform
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-trust">
+
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <span>AI-Powered Learning</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Built for Students</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <span>Learn Anywhere</span>
+            </div>
+
+        </div>
 
     </div>
 
 
 
+    <!-- AI PREVIEW -->
+
+    <div class="hero-visual">
+
+        <div class="orb-glow"></div>
 
 
-    <div class="main-book">
+        <div class="ai-preview">
+
+            <div class="preview-header">
+
+                <div class="preview-brand">
+
+                    <div class="preview-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <div>
+                        <h3>EDUVAULT AI</h3>
+                        <span>Learning Assistant</span>
+                    </div>
+
+                </div>
 
 
-        <i class="fa-solid fa-graduation-cap"></i>
+                <div class="online-status">
+                    <span></span> Online
+                </div>
 
+            </div>
+
+
+
+            <div class="preview-body">
+
+                <div class="ai-welcome">
+
+                    <div class="ai-avatar">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Hello, learner! 👋</h3>
+
+                        <p>
+                            What would you like to understand today?
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="sample-question">
+
+                    <span>YOUR QUESTION</span>
+
+                    <p>
+                        Explain photosynthesis in simple terms.
+                    </p>
+
+                </div>
+
+
+
+                <div class="sample-answer">
+
+                    <div class="answer-heading">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        EDUVAULT AI
+
+                    </div>
+
+                    <p>
+                        Photosynthesis is the process through
+                        which green plants make their own food
+                        using sunlight, water and carbon dioxide.
+                    </p>
+
+                    <div class="answer-tags">
+
+                        <span>Simple explanation</span>
+
+                        <span>Science</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="preview-input">
+
+                    <span>Ask anything...</span>
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FLOATING CARDS -->
+
+        <div class="floating-stat floating-one">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <div>
+                <strong>Learn smarter</strong>
+                <span>Understand concepts</span>
+            </div>
+
+        </div>
+
+
+        <div class="floating-stat floating-two">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <div>
+                <strong>AI Assistance</strong>
+                <span>Available anytime</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     TRUST BAR
+===================================== -->
+
+<section class="trust-bar">
+
+    <p>ONE PLATFORM. ENDLESS POSSIBILITIES.</p>
+
+    <div>
+
+        <span><i class="fa-solid fa-book-open"></i> LEARN</span>
+
+        <span><i class="fa-solid fa-brain"></i> DISCOVER</span>
+
+        <span><i class="fa-solid fa-lightbulb"></i> UNDERSTAND</span>
+
+        <span><i class="fa-solid fa-rocket"></i> GROW</span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     FEATURES
+===================================== -->
+
+<section class="features-section" id="features">
+
+    <div class="section-heading">
+
+        <span class="section-label">WHY EDUVAULT AI</span>
 
         <h2>
-            Learn Anywhere
+            Education, <span>reimagined.</span>
         </h2>
 
+        <p>
+            Everything you need to learn, explore and improve
+            your knowledge in one intelligent platform.
+        </p>
+
+    </div>
+
+
+
+    <div class="features-grid">
+
+
+        <div class="feature-card feature-large">
+
+            <div class="feature-icon purple">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+
+            <span class="feature-number">01</span>
+
+            <h3>Intelligent AI Assistant</h3>
+
+            <p>
+                Ask questions, explore ideas and get
+                explanations designed to make difficult
+                concepts easier to understand.
+            </p>
+
+            <a href="chat.html">
+                Explore AI <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon blue">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <span class="feature-number">02</span>
+
+            <h3>Personal AI Tutor</h3>
+
+            <p>
+                Learn at your own pace with guided
+                explanations and examples.
+            </p>
+
+            <a href="tutor.html">
+                Explore tutor <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon pink">
+                <i class="fa-solid fa-file-lines"></i>
+            </div>
+
+            <span class="feature-number">03</span>
+
+            <h3>Smart Study Notes</h3>
+
+            <p>
+                Create summaries, revision notes and
+                learning materials with AI assistance.
+            </p>
+
+            <a href="notes.html">
+                Explore notes <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon green">
+                <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+
+            <span class="feature-number">04</span>
+
+            <h3>AI Quiz Generator</h3>
+
+            <p>
+                Create practice questions, test your
+                understanding and receive feedback.
+            </p>
+
+            <a href="quiz.html">
+                Explore quizzes <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon orange">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <span class="feature-number">05</span>
+
+            <h3>Learning Progress</h3>
+
+            <p>
+                Monitor your learning activities and
+                identify areas that need improvement.
+            </p>
+
+            <a href="dashboard.html">
+                Explore dashboard <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon cyan">
+                <i class="fa-solid fa-file-arrow-up"></i>
+            </div>
+
+            <span class="feature-number">06</span>
+
+            <h3>Document Assistant</h3>
+
+            <p>
+                Work with your study documents and
+                ask questions about their content.
+            </p>
+
+            <a href="documents.html">
+                Explore documents <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     AI TOOLS
+===================================== -->
+
+<section class="tools-section" id="tools">
+
+    <div class="tools-content">
+
+        <span class="section-label">YOUR INTELLIGENT TOOLKIT</span>
+
+        <h2>
+            Powerful tools.
+
+            <span>Unlimited curiosity.</span>
+        </h2>
 
         <p>
-            Your digital classroom
+            From solving problems to creating study materials,
+            EDUVAULT AI helps you turn questions into knowledge.
         </p>
+
+        <a href="chat.html" class="tools-button">
+            Discover AI Tools
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+
+
+    <div class="tools-list">
+
+        <div class="tool-item">
+            <i class="fa-solid fa-comment-dots"></i>
+            <div>
+                <h3>Ask anything</h3>
+                <p>Get help understanding new concepts.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <div class="tool-item">
+            <i class="fa-solid fa-calculator"></i>
+            <div>
+                <h3>Problem Solver</h3>
+                <p>Work through difficult questions.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <div class="tool-item">
+            <i class="fa-solid fa-book-open"></i>
+            <div>
+                <h3>Notes Generator</h3>
+                <p>Turn information into revision notes.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <div class="tool-item">
+            <i class="fa-solid fa-spell-check"></i>
+            <div>
+                <h3>Writing Assistant</h3>
+                <p>Improve writing and communication.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SUBJECTS
+===================================== -->
+
+<section class="subjects-section" id="subjects">
+
+    <div class="section-heading">
+
+        <span class="section-label">EXPLORE KNOWLEDGE</span>
+
+        <h2>
+            Learn across <span>every subject.</span>
+        </h2>
+
+        <p>
+            Explore different fields of knowledge and
+            discover something new every day.
+        </p>
+
+    </div>
+
+
+
+    <div class="subjects-grid">
+
+
+        <a href="subjects.html" class="subject-card">
+            <i class="fa-solid fa-calculator"></i>
+            <h3>Mathematics</h3>
+            <span>Explore numbers and logic</span>
+        </a>
+
+
+        <a href="subjects.html" class="subject-card">
+            <i class="fa-solid fa-flask"></i>
+            <h3>Science</h3>
+            <span>Discover how things work</span>
+        </a>
+
+
+        <a href="subjects.html" class="subject-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Computer Science</h3>
+            <span>Explore the digital world</span>
+        </a>
+
+
+        <a href="subjects.html" class="subject-card">
+            <i class="fa-solid fa-earth-africa"></i>
+            <h3>Geography</h3>
+            <span>Understand our planet</span>
+        </a>
+
+
+        <a href="subjects.html" class="subject-card">
+            <i class="fa-solid fa-language"></i>
+            <h3>Languages</h3>
+            <span>Develop communication skills</span>
+        </a>
+
+
+        <a href="subjects.html" class="subject-card">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h3>Business</h3>
+            <span>Discover business and economics</span>
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     ABOUT
+===================================== -->
+
+<section class="about-section" id="about">
+
+    <div class="about-icon">
+
+        <i class="fa-solid fa-brain"></i>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <span class="section-label">OUR VISION</span>
+
+        <h2>
+            Knowledge should have
+            <span>no limits.</span>
+        </h2>
+
+        <p>
+            We believe everyone deserves access to better
+            learning opportunities.
+
+            EDUVAULT AI brings intelligent technology
+            and education together to make learning
+            more accessible, engaging and effective.
+        </p>
+
+        <a href="chat.html" class="about-button">
+            Start Your Journey
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CALL TO ACTION
+===================================== -->
+
+<section class="cta-section">
+
+    <div class="cta-glow"></div>
+
+    <span class="section-label">YOUR NEXT CHAPTER STARTS HERE</span>
+
+    <h2>
+        Ready to learn
+        <span>something amazing?</span>
+    </h2>
+
+    <p>
+        Ask questions. Discover knowledge.
+        Unlock your potential with EDUVAULT AI.
+    </p>
+
+    <a href="chat.html" class="cta-button">
+        Get Started For Free
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+    <span class="cta-note">
+        <i class="fa-solid fa-shield-halved"></i>
+        Built for curious minds.
+    </span>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <span>EDUVAULT<span class="logo-ai"> AI</span></span>
+
+            </a>
+
+
+            <p>
+                Empowering curious minds through
+                intelligent learning technology.
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>Platform</h3>
+
+            <a href="#features">Features</a>
+
+            <a href="#tools">AI Tools</a>
+
+            <a href="#subjects">Subjects</a>
+
+            <a href="chat.html">AI Assistant</a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>Learning</h3>
+
+            <a href="tutor.html">AI Tutor</a>
+
+            <a href="notes.html">Study Notes</a>
+
+            <a href="quiz.html">Quizzes</a>
+
+            <a href="documents.html">Documents</a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>Information</h3>
+
+            <a href="#about">About Us</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="privacy.html">Privacy Policy</a>
+
+            <a href="terms.html">Terms of Use</a>
+
+        </div>
 
 
     </div>
 
 
 
-</div>
+    <div class="footer-bottom">
 
+        <p>
+            © 2026 EDUVAULT AI. All rights reserved.
+        </p>
 
-</section>
+        <p>
+            Made for curious minds.
+            <i class="fa-solid fa-heart"></i>
+        </p>
 
-
-
-
-
-
-
-<!-- ================= STATISTICS ================= -->
-
-
-<section class="numbers">
-
-
-<div>
-
-<h2>
-1000+
-</h2>
-
-<p>
-Revision Notes
-</p>
-
-</div>
-
-
-
-
-<div>
-
-<h2>
-500+
-</h2>
-
-<p>
-Exam Papers
-</p>
-
-</div>
-
-
-
-
-<div>
-
-<h2>
-10+
-</h2>
-
-<p>
-Subjects
-</p>
-
-</div>
-
-
-
-
-<div>
-
-<h2>
-2026
-</h2>
-
-<p>
-Updated Content
-</p>
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- ================= WHY CHOOSE US ================= -->
-
-
-<section class="why">
-
-
-<h2>
-Why Students Choose Us
-</h2>
-
-
-
-<div class="features">
-
-
-
-<div class="feature">
-
-
-<i class="fa-solid fa-book-open"></i>
-
-
-<h3>
-Quality Notes
-</h3>
-
-
-<p>
-Simple explanations designed for O-Level success.
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="feature">
-
-
-<i class="fa-solid fa-file-circle-check"></i>
-
-
-<h3>
-Exam Practice
-</h3>
-
-
-<p>
-Prepare using specimen papers and past exams.
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="feature">
-
-
-<i class="fa-solid fa-mobile-screen"></i>
-
-
-<h3>
-Learn Anywhere
-</h3>
-
-
-<p>
-Study using your phone, tablet or computer.
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ================= SUBJECTS ================= -->
-
-
-<section class="subjects">
-
-
-<h2>
-Explore Subjects
-</h2>
-
-
-
-
-<div class="subject-grid">
-
-
-
-<a href="subjects.html">
-
-<i class="fa-solid fa-calculator"></i>
-
-Mathematics
-
-</a>
-
-
-
-
-<a href="subjects.html">
-
-<i class="fa-solid fa-flask"></i>
-
-Combined Science
-
-</a>
-
-
-
-
-
-<a href="subjects.html">
-
-<i class="fa-solid fa-code"></i>
-
-Computer Science
-
-</a>
-
-
-
-
-
-<a href="subjects.html">
-
-<i class="fa-solid fa-earth-africa"></i>
-
-Geography
-
-</a>
-
-
-
-
-
-<a href="subjects.html">
-
-<i class="fa-solid fa-language"></i>
-
-English
-
-</a>
-
-
-
-
-
-<a href="subjects.html">
-
-<i class="fa-solid fa-landmark"></i>
-
-Heritage
-
-</a>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- ================= CALL TO ACTION ================= -->
-
-
-<section class="cta">
-
-
-<h2>
-
-Ready To Improve Your Results?
-
-</h2>
-
-
-<p>
-
-Join thousands of students preparing smarter.
-
-</p>
-
-
-
-<a href="notes.html">
-
-Browse Resources
-
-</a>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ================= FOOTER ================= -->
-
-
-<footer>
-
-
-<div>
-
-
-<h2>
-O Level Study Hub
-</h2>
-
-
-<p>
-Empowering Zimbabwean students through digital learning.
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="footer-links">
-
-
-<a href="index.html">
-Home
-</a>
-
-
-<a href="contact.html">
-Contact
-</a>
-
-
-<a href="notes.html">
-Resources
-</a>
-
-
-</div>
-
-
-
-
-
-
-<p>
-
-© 2026 O Level Study Hub. All Rights Reserved.
-
-</p>
-
-
+    </div>
 
 </footer>
 
 
 
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+    const menuToggle = document.getElementById("menuToggle");
+
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function() {
+
+        const isOpen = navLinks.classList.toggle("show");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+
+        menuToggle.innerHTML = isOpen
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+
+    navLinks.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", function() {
+
+            navLinks.classList.remove("show");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+
+        });
+
+    });
+
+</script>
 
 
 </body>
